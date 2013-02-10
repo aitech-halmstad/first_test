@@ -129,7 +129,7 @@ namespace Neo.ApplicationFramework.Generated
 		
 		void MicroBus_Created(System.Object sender, System.EventArgs e)
 		{
-			String strServer = "192.168.1.18";
+			String strServer = "192.168.1.10";
 			String strPort = "10001";
 			
 			try
