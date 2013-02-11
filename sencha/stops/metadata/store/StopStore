@@ -1,0 +1,53 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StopStore",
+        "autoLoad": true,
+        "storeId": "MyJsonStore",
+        "model": "StopData"
+    },
+    "id": "ExtBox1-ext-gen4781",
+    "designerId": "713dea96-72fd-4a32-8c8d-b26729359931",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "designer|displayName": "MyAjaxProxy",
+                "extraParams": [
+                    "{\r",
+                    "    \"StoppTidpunkt\":\"\",\r",
+                    "    \"StartTidpunkt\":\"\"\r",
+                    "}"
+                ],
+                "url": "data/fetch.php"
+            },
+            "designerId": "01775343-eb06-4ef6-a662-ff1b66105810",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader",
+                        "root": "data"
+                    },
+                    "designerId": "32164efe-334f-4f87-9e2c-1ad18eb0c9a3"
+                }
+            ]
+        }
+    ]
+}

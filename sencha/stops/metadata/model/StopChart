@@ -1,0 +1,41 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StopChart"
+    },
+    "id": "ExtBox1-ext-gen24501",
+    "designerId": "ea3e8ba6-9862-4ec9-a207-b822ba52e073",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field7",
+                "name": "name"
+            },
+            "designerId": "2eba0733-0a31-4808-8e8e-3f2247c6a2b9"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field8",
+                "name": "rating"
+            },
+            "designerId": "e8f5754a-8c74-4958-a0d7-6a39de17a044"
+        }
+    ]
+}

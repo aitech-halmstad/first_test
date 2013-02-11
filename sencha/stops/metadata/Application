@@ -1,0 +1,30 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "StopData",
+            "StopChart",
+            "PlantData",
+            "PositionData"
+        ],
+        "stores": [
+            "StopStore",
+            "ChartStore",
+            "PlantStore",
+            "PositionStore",
+            "SubPosStore"
+        ],
+        "views": [
+            "MyPanel"
+        ],
+        "autoCreateViewport": true,
+        "name": "MyApp"
+    },
+    "id": "ExtBox1-ext-gen1772",
+    "designerId": "application"
+}

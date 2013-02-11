@@ -1,0 +1,131 @@
+{
+    "name": "stops",
+    "settings": {
+        "urlPrefix": "http://192.168.1.101/sencha/stops/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "d24e7c10-b40e-49ca-b1e0-2b61cd56a779": {
+            "paths": [
+                "metadata/view/MyPanel",
+                "app/view/override/MyPanel.js",
+                "app/view/MyPanel.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyPanel"
+        },
+        "713dea96-72fd-4a32-8c8d-b26729359931": {
+            "paths": [
+                "metadata/store/StopStore",
+                "app/store/override/StopStore.js",
+                "app/store/StopStore.js"
+            ],
+            "className": "StopStore"
+        },
+        "4a36ea24-3556-4f4d-91a1-4cc474b7b374": {
+            "paths": [
+                "metadata/model/StopData",
+                "app/model/override/StopData.js",
+                "app/model/StopData.js"
+            ],
+            "className": "StopData"
+        },
+        "cb3d38e7-7205-46bf-bc6d-c753aaa87ae2": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "35cffbd4-17f5-4b7e-a981-ac89fa244b9e": {
+            "paths": [
+                "metadata/store/ChartStore",
+                "app/store/override/ChartStore.js",
+                "app/store/ChartStore.js"
+            ],
+            "className": "ChartStore"
+        },
+        "ea3e8ba6-9862-4ec9-a207-b822ba52e073": {
+            "paths": [
+                "metadata/model/StopChart",
+                "app/model/override/StopChart.js",
+                "app/model/StopChart.js"
+            ],
+            "className": "StopChart"
+        },
+        "6e37fdbf-dd94-48db-8aae-1f92f1c216b8": {
+            "paths": [
+                "metadata/store/PlantStore",
+                "app/store/override/PlantStore.js",
+                "app/store/PlantStore.js"
+            ],
+            "className": "PlantStore"
+        },
+        "5b2880a0-a245-4f64-ad02-33ea9ceeef2b": {
+            "paths": [
+                "metadata/model/PlantData",
+                "app/model/override/PlantData.js",
+                "app/model/PlantData.js"
+            ],
+            "className": "PlantData"
+        },
+        "6cd60c03-6868-4597-a6c6-78a5ed8370c3": {
+            "paths": [
+                "metadata/store/PositionStore",
+                "app/store/override/PositionStore.js",
+                "app/store/PositionStore.js"
+            ],
+            "className": "PositionStore"
+        },
+        "b23902a7-a0ff-471e-8ef7-7782935bf19d": {
+            "paths": [
+                "metadata/model/PositionData",
+                "app/model/override/PositionData.js",
+                "app/model/PositionData.js"
+            ],
+            "className": "PositionData"
+        },
+        "398f8971-2fbd-4556-8735-6b320f99d401": {
+            "paths": [
+                "metadata/store/SubPosStore",
+                "app/store/override/SubPosStore.js",
+                "app/store/SubPosStore.js"
+            ],
+            "className": "SubPosStore"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "d24e7c10-b40e-49ca-b1e0-2b61cd56a779"
+        ],
+        "store": [
+            "713dea96-72fd-4a32-8c8d-b26729359931",
+            "35cffbd4-17f5-4b7e-a981-ac89fa244b9e",
+            "6e37fdbf-dd94-48db-8aae-1f92f1c216b8",
+            "6cd60c03-6868-4597-a6c6-78a5ed8370c3",
+            "398f8971-2fbd-4556-8735-6b320f99d401"
+        ],
+        "controller": [],
+        "model": [
+            "4a36ea24-3556-4f4d-91a1-4cc474b7b374",
+            "ea3e8ba6-9862-4ec9-a207-b822ba52e073",
+            "5b2880a0-a245-4f64-ad02-33ea9ceeef2b",
+            "b23902a7-a0ff-471e-8ef7-7782935bf19d"
+        ],
+        "resource": [
+            "cb3d38e7-7205-46bf-bc6d-c753aaa87ae2"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

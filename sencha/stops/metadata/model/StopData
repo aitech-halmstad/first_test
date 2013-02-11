@@ -1,0 +1,67 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StopData"
+    },
+    "id": "ExtBox1-ext-gen4044",
+    "designerId": "4a36ea24-3556-4f4d-91a1-4cc474b7b374",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "StoppTidpunkt"
+            },
+            "designerId": "b93e72cc-a05a-436f-89a4-aff00f961df8"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "StartTidpunkt"
+            },
+            "designerId": "0da994a4-2ca3-4b81-b451-6ff22455d035"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "Stopporsak"
+            },
+            "designerId": "e213304d-93d5-4d0a-bbe9-6b8d8342f02b"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "Quality"
+            },
+            "designerId": "458d4e9f-9037-4c4f-b4aa-2a5d5a3321b8"
+        }
+    ]
+}

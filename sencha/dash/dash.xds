@@ -1,0 +1,48 @@
+{
+    "name": "dash",
+    "settings": {
+        "urlPrefix": "http://192.168.1.101/sencha/dash/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "e4199cf1-9be5-4e8a-8d18-81ee34a5d609": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyTabPanel"
+        },
+        "1b10639e-dada-4a92-82dd-c103354e6860": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "e4199cf1-9be5-4e8a-8d18-81ee34a5d609"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "1b10639e-dada-4a92-82dd-c103354e6860"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

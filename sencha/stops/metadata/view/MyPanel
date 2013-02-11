@@ -1,0 +1,466 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userClassName": "MyPanel",
+        "designer|initialView": true,
+        "frame": true,
+        "height": 592,
+        "width": 1033,
+        "layout": "hbox",
+        "title": "Stopp"
+    },
+    "id": "ExtBox1-ext-gen2312",
+    "designerId": "d24e7c10-b40e-49ca-b1e0-2b61cd56a779",
+    "cn": [
+        {
+            "type": "gridpanel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "dock": "right",
+                "designer|userClassName": "MyGridPanel",
+                "height": 217,
+                "id": "MyGridPanel",
+                "title": null,
+                "store": "StopStore"
+            },
+            "designerId": "c8967213-c6dc-4c69-ad33-d2ea61b8023f",
+            "cn": [
+                {
+                    "type": "gridview",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGridView"
+                    },
+                    "designerId": "ecdc251c-66f7-4aab-ace9-317b70a5e45f"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn1",
+                        "width": 125,
+                        "dataIndex": "StoppTidpunkt",
+                        "text": "StoppTidpunkt"
+                    },
+                    "designerId": "d350af3b-e176-4283-9d82-b1769432e184"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn2",
+                        "width": 121,
+                        "dataIndex": "StartTidpunkt",
+                        "text": "StartTidpunkt"
+                    },
+                    "designerId": "3077938c-9564-4e19-92e9-e16476038bd6"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn3",
+                        "dataIndex": "Stopporsak",
+                        "text": "Stopporsak"
+                    },
+                    "designerId": "515f086d-2ff9-4ae6-b738-c7a3b7f4f9a5"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onGridpanelSelect",
+                        "fn": "onGridpanelSelect",
+                        "implHandler": [
+                            "//Ext.MessageBox.confirm('Please confirm your action', 'Did you really select this?!');\r",
+                            "\r",
+                            "\r",
+                            "\r",
+                            "// grab a reference to the detailPanel via itemId\r",
+                            "// the # in front of the id indicates that we would like to grab a reference by\r",
+                            "var detailPanel = this.child('#detailPanel');\r",
+                            "// update the detailPanel with data\r",
+                            "// this will trigger the tpl to become updates\r",
+                            "detailPanel.update(record.data);\r",
+                            "\r",
+                            "// grab a reference to the qualityChart, notice we use down here instead of child\r",
+                            "// because down will go down the container hierarchy at any depth and child will\r",
+                            "// only retrieve direct children\r",
+                            "var chart = this.down('#qualityChart');\r",
+                            "// get the quality field out of this record\r",
+                            "var qualityData = record.get('Quality');\r",
+                            "chart.store.loadData(qualityData);"
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "designerId": "0d45dbe1-0cba-4ee7-8a9c-f0402e7bc112"
+                }
+            ]
+        },
+        {
+            "type": "form",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "dock": "top",
+                "designer|userClassName": "MyForm",
+                "layout": "auto",
+                "bodyPadding": 10,
+                "title": null
+            },
+            "designerId": "8e49475f-1566-4c84-8050-58669e63723a",
+            "cn": [
+                {
+                    "type": "datefield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyDateField",
+                        "id": "StoppTid",
+                        "itemId": "StoppTid",
+                        "margin": "5px",
+                        "value": 1360191600000,
+                        "fieldLabel": "Stopptid",
+                        "format": "Y-m-d",
+                        "startDay": 1
+                    },
+                    "designerId": "25ed17c7-a277-4f90-9181-6561b2c423c8"
+                },
+                {
+                    "type": "datefield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyDateField1",
+                        "id": "StartTid",
+                        "itemId": "StartTid",
+                        "margin": "5px",
+                        "fieldLabel": "Starttid",
+                        "format": "Y-m-d"
+                    },
+                    "designerId": "bd002493-b527-4755-a3d4-fc56fd0f004f"
+                },
+                {
+                    "type": "combobox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyComboBox",
+                        "margin": "5px",
+                        "fieldLabel": "Sektion",
+                        "displayField": "name",
+                        "store": "PlantStore",
+                        "valueField": "id"
+                    },
+                    "designerId": "99769c3a-df41-4595-84e1-18afee89d665",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onComboboxChange",
+                                "fn": "onComboboxChange",
+                                "implHandler": [
+                                    "var extraParams = {\"parent\": newValue, \"cmd\":\"getPositionInfo\"};\r",
+                                    "\r",
+                                    "Ext.getStore('PositionStore').getProxy().extraParams = extraParams;\r",
+                                    "Ext.getStore('PositionStore').load();"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "designerId": "cf61faf3-a79d-44d6-b353-fbfde0c07497"
+                        }
+                    ]
+                },
+                {
+                    "type": "combobox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyComboBox1",
+                        "margin": "5px",
+                        "fieldLabel": "Position",
+                        "displayField": "name",
+                        "store": "PositionStore",
+                        "valueField": "id"
+                    },
+                    "designerId": "c743b272-8e2f-4212-af41-aeaa9d0faa90",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onComboboxChange1",
+                                "fn": "onComboboxChange1",
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "designerId": "e45744ad-2f5f-41c5-88ef-ce387c052528"
+                        }
+                    ]
+                },
+                {
+                    "type": "combobox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyComboBox2",
+                        "margin": "5px",
+                        "fieldLabel": "Sub Pos"
+                    },
+                    "designerId": "adf2afcf-221a-4161-bc32-13ad0a65fcc4"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton",
+                        "margin": "5px",
+                        "text": "Sök nya stopp"
+                    },
+                    "designerId": "ab1aa4ca-6469-4115-b976-a1fb686174ee",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onButtonClick",
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "\r",
+                                    "var StoppTid = Ext.Date.format(Ext.getCmp('StoppTid').getValue(), \"Y-m-d\");\r",
+                                    "var StartTid = Ext.Date.format(Ext.getCmp('StartTid').getValue(), \"Y-m-d\");\r",
+                                    "\r",
+                                    "var extraParams = {\"StoppTidpunkt\": StoppTid, \"StartTidpunkt\":StartTid};\r",
+                                    "\r",
+                                    "\r",
+                                    "//var proxy = Ext.getStore('StopStore').getProxy();\r",
+                                    "//proxy.setExtraParams({foo:'bar'});\r",
+                                    "\r",
+                                    "Ext.getStore('StopStore').getProxy().extraParams = extraParams;\r",
+                                    "Ext.getStore('StopStore').load();\r",
+                                    "\r",
+                                    "///MyApp.store.StopStore.getProxy().setExtraParams(StoppTid);\r",
+                                    "//Ext.StopStore.proxy.extraParams = { \"StoppTidpunkt\":StoppTid }\r",
+                                    "\r",
+                                    "//MyApp.store.StopStore.load();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "a1a331f5-70c9-4770-b53e-ede10d087215"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyPanel1",
+                "height": 179,
+                "width": 21,
+                "layout": "fit",
+                "title": null
+            },
+            "designerId": "cd5433da-caf0-49ec-9eb4-9f2dbed449e7",
+            "cn": [
+                {
+                    "type": "chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "ColumnChart",
+                        "height": 250,
+                        "itemId": "qualityChart",
+                        "width": 400,
+                        "animate": [
+                            "true"
+                        ],
+                        "insetPadding": 20,
+                        "store": "ChartStore"
+                    },
+                    "designerId": "c9990a34-4678-4006-9004-f0c5e34e4fa0",
+                    "cn": [
+                        {
+                            "type": "categoryaxis",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCategoryAxis",
+                                "fields": [
+                                    "name"
+                                ],
+                                "position": "bottom",
+                                "title": "Quality"
+                            },
+                            "designerId": "6486d6b7-b53c-4896-be44-2469d232b12e"
+                        },
+                        {
+                            "type": "numericaxis",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyNumericAxis",
+                                "fields": [
+                                    "rating"
+                                ],
+                                "majorTickSteps": null,
+                                "position": "left",
+                                "title": "Score",
+                                "maximum": 10,
+                                "minimum": 0
+                            },
+                            "designerId": "c3cc335e-80c0-432d-9db6-58d8e024688d"
+                        },
+                        {
+                            "type": "columnseries",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyColumnSeries",
+                                "label": [
+                                    " {\r",
+                                    "     display: 'insideEnd',\r",
+                                    "     field: 'rating',\r",
+                                    "     color: '#333',\r",
+                                    "     \"text-anchor\": 'middle'\r",
+                                    " }"
+                                ],
+                                "xField": "name",
+                                "yField": [
+                                    "rating"
+                                ]
+                            },
+                            "designerId": "162028b1-520f-4eed-a21f-044f8faa116b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "dock": "bottom",
+                "designer|userClassName": "MyPanel2",
+                "height": 163,
+                "itemId": "detailPanel",
+                "width": 1023,
+                "title": "Details"
+            },
+            "designerId": "4b39a17d-8bf7-42e4-8809-e4407a6a8204",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "Stopptid: {StoppTidpunkt}<br>\r",
+                            "Starttid: {StartTidpunkt}<br>\r",
+                            "Orsak: {Stopporsak}<br>"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "e2a0f793-f84d-476b-9ecd-e6d5f6ec879d"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ChartStore",
+        "storeId": "MyStore",
+        "model": "StopChart"
+    },
+    "id": "ExtBox1-ext-gen24699",
+    "designerId": "35cffbd4-17f5-4b7e-a981-ac89fa244b9e"
+}

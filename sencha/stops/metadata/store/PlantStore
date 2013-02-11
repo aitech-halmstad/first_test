@@ -1,0 +1,49 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PlantStore",
+        "autoLoad": true,
+        "storeId": "MyJsonStore1",
+        "model": "PlantData"
+    },
+    "id": "ExtBox1-ext-gen25382",
+    "designerId": "6e37fdbf-dd94-48db-8aae-1f92f1c216b8",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy1",
+                "extraParams": [
+                    "{\"cmd\":\"getPlantInfo\"}"
+                ],
+                "url": "data/sqlQuerys.php"
+            },
+            "designerId": "6e297cb1-40e1-4c1d-bd75-ce1537a2e5f2",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader1",
+                        "root": "plant"
+                    },
+                    "designerId": "fc0f3b31-a858-4ac9-b290-16e3411bb9dd"
+                }
+            ]
+        }
+    ]
+}

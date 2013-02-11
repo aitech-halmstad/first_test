@@ -1,0 +1,41 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PlantData"
+    },
+    "id": "ExtBox1-ext-gen25791",
+    "designerId": "5b2880a0-a245-4f64-ad02-33ea9ceeef2b",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field6",
+                "name": "id"
+            },
+            "designerId": "36bd89be-db7e-471b-8541-100d35076925"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field7",
+                "name": "name"
+            },
+            "designerId": "2a6762eb-4779-44e0-af88-dbdfc5ddc53f"
+        }
+    ]
+}
